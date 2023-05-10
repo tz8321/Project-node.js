@@ -1,0 +1,9 @@
+mixin listItem(student)
+  tr
+    td #{student.id}
+    td #{student.title}
+    td #{student.grade}
+    td
+      a(href="/student/delete/" + student.id) delete
+    td
+      a(href="/student/form/" + student.id) edit
